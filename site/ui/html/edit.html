@@ -1,0 +1,25 @@
+{{define "edit"}}
+ 
+{{template "header"}}
+     <main class="px-3">
+        <br>
+       <h1>Редактирование статьи</h1>
+       <br>
+     <form method="POST">
+        <h4>Название статьи</h4>
+        <input type="text" class="form-control" name="title" id="title" value="{{.Title}}" /><br>
+
+        <h4>Изменить анонс</h4>
+        <input name="anons" id="anons" class="form-control" value="{{.Anons}}" /><br>
+
+        <h4>Изменить текст</h4>
+        <input name="full_text" id="full_text" class="form-control" value="{{.FullText}}" /><br>
+        <button  type="submit" class="btn btn-warning">Отправить</button>
+    </form>
+
+     </main>
+     <br>
+{{template "footer"}}
+
+{{end}}   
+    
